@@ -14,8 +14,8 @@ st.caption("Session 1 · raw OpenAI SDK + glue code")
 load_dotenv()  # copies values from the .env file into environment variables
 api_key = os.getenv("OPENROUTER_API_KEY")
 if not api_key:
-    st.error("OPENROUTER_API_KEY not found. Copy `.env.example` to `.env`, "
-             "paste your key from https://openrouter.ai/keys, then restart the app.")
+    st.error("OPENROUTER_API_KEY not found. Create a `.env` file in the project "
+             "directory, add your key from https://openrouter.ai/keys, then restart the app.")
     st.stop()  # stop the script here; nothing below runs
 
 # --- 2. Client + model -----------------------------------------------------
